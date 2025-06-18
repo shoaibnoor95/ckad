@@ -1,4 +1,7 @@
 FROM  python:3
+LABEL version="1.0.0"
+LABEL maintainer="shoaibnoor95"
 WORKDIR /usr/src/app
-COPY app.py .
-CMD [ "python","app.py" ]
+ADD hellowordl.py /
+
+CMD [ "python","hellowordl.py" ]
