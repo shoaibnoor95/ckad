@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  labels: 
+    app: nginx
+    env: Production
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx:1.10
+    env:
+    - name: Hello_MSG
+      value: "Hello from the levelUp 360"
+    - name: Greeting
+      value: "You are Awesome, keep loading..."  
+
